@@ -1,10 +1,8 @@
 package com.example.tryoutpas_absent12_absent30;
 
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.frame_layout, new HomeFragment())
+                .replace(R.id.frame_layout, new PremierLeagueFragment())
                 .commit();
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
@@ -27,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
             int itemId = item.getItemId();
 
             if (itemId == R.id.nav_home) {
-                fragment = new HomeFragment();
+                fragment = new PremierLeagueFragment();
             } else if (itemId == R.id.nav_dashboard) {
-                fragment = new DashboardFragment();
+                fragment = new LaLigaFragment();
             } else if (itemId == R.id.nav_notifications) {
                 fragment = new NotificationsFragment();
             }

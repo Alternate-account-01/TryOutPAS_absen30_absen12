@@ -2,11 +2,11 @@
     <item
         android:id="@+id/nav_home"
         android:icon="@android:drawable/ic_menu_view"
-        android:title="Premier league" />
+        android:title="Premier League" />
     <item
         android:id="@+id/nav_dashboard"
         android:icon="@android:drawable/ic_menu_manage"
-        android:title="Spainish leauge" />
+        android:title="Spanish League" />
     <item
         android:id="@+id/nav_notifications"
         android:icon="@android:drawable/ic_menu_info_details"
